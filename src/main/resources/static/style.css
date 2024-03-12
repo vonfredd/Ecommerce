@@ -1,0 +1,32 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 10vw;
+    background-color: #e5e3e3;
+}
+
+#header_container{
+    font-size: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-ui-container{
+    font-size: 1vw;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 100vw;
+    margin-left: 10vw;
+    background-color: #efefef;
+}

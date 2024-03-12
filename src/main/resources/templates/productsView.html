@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="productsStyle.css">
+</head>
+<body>
+<header>
+    <div id="header_container">
+        <div id="logo_container">
+            <h4 id="h4-logo">My Logo</h4>
+        </div>
+        <div>
+            Ecommerce
+        </div>
+        <div id="header-ui-container">
+            <ul>
+                <li>Contact</li>
+                <li>About</li>
+                <li>mail@company.com</li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div id="products-container">
+    <div id="product-presentation" th:each="product : ${productList}">
+        <div id="image-container">
+            <img id="product-image" th:src="@{${product.getImgUrl()}}" alt="Product Image">
+        </div>
+        <h4 th:text="${product.getName()}"></h4>
+        <h4 th:text="${'Price: ' + product.getPrice()}"></h4>
+    </div>
+</div>
+</body>
+</html>
