@@ -15,7 +15,7 @@ header{
     object-fit: contain;
 }
 
-#header_container{
+#header-container{
     font-size: 2vw;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -25,19 +25,38 @@ header{
     align-items: center;
 }
 #product-presentation{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-top: 0;
     padding-top: 1vw;
+}
+
+.product-info{
+    margin: 6px;
 }
 
 #header-ui-container{
     font-size: 1vw;
 }
 
+#content-container{
+    width: 80vw;
+    margin-left: 10vw;
+    height: 100vw;
+    background-color: #efefef;
+}
+
+img:hover{
+    box-shadow: 0 0 5px 0 rgba(72, 67, 67, 0.5);
+    border-color: rgba(82, 80, 80, 0.5);
+    border-radius: 20px;
+    transform: scale(105%);
+}
+
 #products-container{
     display: flex;
     justify-content: space-evenly;
     width: 80vw;
-    height: 100vw;
-    margin-left: 10vw;
     background-color: #efefef;
 }
